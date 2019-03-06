@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Inheritence
 {
-    class Employee
+    public class Employee
     {
         //properties
         public string Name { get; set; }
@@ -41,6 +41,7 @@ namespace Inheritence
 
         }
 
-        public abstract decimal GetMonthlySalary();
+        public virtual decimal GetMonthlySalary()
+        { return 00.00M; }
     }
 }

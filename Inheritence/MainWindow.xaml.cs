@@ -72,7 +72,7 @@ namespace Inheritence
                 employees[i] = e.FileFormat();
             }
 
-            File.WriteAllLines(@"C:\temp\Employees.txt", employees);
+            File.WriteAllLines(@"C:\Users\TEMP\Employees.txt", employees);
         }
 
         private void BtnSaveEmployees_Click(object sender, RoutedEventArgs e)
