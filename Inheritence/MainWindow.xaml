@@ -4,9 +4,26 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Inheritence"
-        mc:Ignorable="d"
+         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <ListBox Grid.Column="0" Grid.Row="0"  Name="lbxEmployees" Margin="10"/>
+
+
+        <StackPanel Grid.Column="0" Grid.Row="1" Orientation="Horizontal">
+            <Button Content="Get Employees" Name="btnGetEmployees" Width="100" Margin="10" Click="BtnGetEmployees_Click"/>
+            <Button Content="Save to File" Name="btnSaveEmployees" Width="100" Margin="10" Click="BtnSaveEmployees_Click"/>
+            <Button Content="Get Type" Name="btnGetType" Width="100" Margin="10" Click="BtnGetType_Click"/>
+            <Button Content="Get Pay" Name="btnGetPay" Width="100" Margin="10" Click="BtnGetPay_Click"/>
+
+        </StackPanel>
+
+
+
     </Grid>
 </Window>
