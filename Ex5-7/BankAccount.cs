@@ -24,7 +24,11 @@ namespace Ex5_7
         {
             return string.Format("{0} - {1}", Account, Name);
         }
+        public virtual string FileFormat()
+        {
+            return string.Format("{0},{1},", Name, Account);
 
+        }
     }
 
 
