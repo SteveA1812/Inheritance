@@ -20,7 +20,7 @@ namespace Ex5_7
         public BankAccount()
         { }
 
-        public override string ToString()
+        public override  string ToString()
         {
             return string.Format("{0} - {1}", Account, Name);
         }

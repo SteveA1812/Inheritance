@@ -15,12 +15,12 @@
             <RowDefinition Height="4*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <ListBox Name="LbxAccounts" Margin="20" Grid.Column="0" Grid.Row="0" ></ListBox>
+        <ListBox Name="LbxAccounts" Margin="20" Grid.Column="0" Grid.Row="0" SelectionChanged="LbxAccounts_SelectionChanged" ></ListBox>
         <TextBlock Name="tblkDisplay" Grid.Column="1" Grid.Row="0" Margin="20"></TextBlock>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Margin="0,0,0,0">
 
             <TextBox Width="250" Margin="20" Name="txtbxAmount" ></TextBox>
-            <Button  Width="100" Height="30"  Margin="20" Content="Withdraw" Name="btnWithdraw"></Button>
+            <Button  Width="100" Height="30"  Margin="20" Content="Withdraw" Name="btnWithdraw" Click="btnWithdraw_Click"></Button>
             <Button Width="100" Height="30" Margin="20" Content="Deposit" Name="btnDeposit"></Button>
             <Button  Width="100" Height="30" Margin="20" Content="Add Interest" Name="btnInterest"></Button>
         </StackPanel>

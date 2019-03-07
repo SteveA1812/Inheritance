@@ -57,6 +57,15 @@ namespace Ex5_7
             File.WriteAllLines(@"C:\Users\TEMP\Employees.txt", Accounts);
         }
 
+        private void LbxAccounts_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            tblkDisplay.Text = LbxAccounts.SelectedItem.ToString();
 
+        }
+
+        private void btnWithdraw_Click(object sender, RoutedEventArgs e)
+        {
+           
+        }
     }
 }
